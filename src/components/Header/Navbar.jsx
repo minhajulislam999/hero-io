@@ -1,4 +1,5 @@
 import React from 'react'
+// import { Links } from 'react-router'
 import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
@@ -44,10 +45,14 @@ const Navbar = () => {
 
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl text-[#632EE3] w-110px h-40px rounded-xl">
+        <Link to='/' className = "btn btn-ghost text-xl text-[#632EE3] w-110px h-40px rounded-xl" >
+        
+       
           <img className='w-40px h-40px' src="https://i.ibb.co.com/wFJP7LRh/logo-D9-NHcesw-1.png" alt="" srcset="" />
 
-          HERO.IO</a>
+          HERO.IO
+        </Link>
+        
       </div>
       <div className="navbar-center  hidden lg:flex">
         <ul className="menu menu-horizontal px-1 rounded-xl gap-5">
