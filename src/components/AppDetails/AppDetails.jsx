@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { useEffect } from 'react'
 import { useParams } from 'react-router'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
+import { toast, ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 const AppDetails = () => {
 
@@ -56,7 +58,14 @@ const AppDetails = () => {
           </div>
         </div>
 
-        <button disabled ={installed} onClick={()=> setInstalled(true)} className='btn btn-primary'>
+        <button disabled ={installed} onClick={()=>{
+        setInstalled(true)
+                toast.success("App Installed Successfully!")
+
+        }
+      }
+        
+        className='btn btn-primary'>
           {installed ? "Installed" : "Install"}
         </button>
       </div>
@@ -70,6 +79,7 @@ const AppDetails = () => {
           <Bar dataKey="count" fill="#FF8811" />
         </BarChart>
       </ResponsiveContainer>
+      <ToastContainer />
     </div>
   )
 }
