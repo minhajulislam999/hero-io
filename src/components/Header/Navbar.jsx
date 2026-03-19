@@ -35,7 +35,7 @@ const Navbar = () => {
 
 
             <a href='https://github.com/minhajulislam999' className="btn  bg-[#632EE3] text-white rounded-xl">
-              <img className='w-2px h-2px bg-[#632EE3] rounded' src="https://i.ibb.co.com/bMmg01MS/fi-2111432.png" alt="" srcset="" />
+              <img className='w-2px h-2px bg-[#632EE3] rounded' src="https://i.ibb.co.com/bMmg01MS/fi-2111432.png"  />
 
               Contribute</a>
 
@@ -48,7 +48,7 @@ const Navbar = () => {
         <Link to='/' className = "btn btn-ghost text-xl text-[#632EE3] w-110px h-40px rounded-xl" >
         
        
-          <img className='w-40px h-40px' src="https://i.ibb.co.com/wFJP7LRh/logo-D9-NHcesw-1.png" alt="" srcset="" />
+          <img className='w-40px h-40px' src="https://i.ibb.co.com/wFJP7LRh/logo-D9-NHcesw-1.png"  />
 
           HERO.IO
         </Link>
@@ -76,7 +76,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-end w-145px h-43px">
         <a href='https://github.com/minhajulislam999' className="btn  bg-[#632EE3] text-white rounded-xl">
-          <img className='w-2px h-2px bg-[#632EE3] rounded' src="https://i.ibb.co.com/bMmg01MS/fi-2111432.png" alt="" srcset="" />
+          <img className='w-2px h-2px bg-[#632EE3] rounded' src="https://i.ibb.co.com/bMmg01MS/fi-2111432.png"  />
 
           Contribute</a>
       </div>

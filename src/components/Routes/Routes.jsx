@@ -4,6 +4,7 @@ import Home from '../Header/Home/Home';
 import AppNav from '../Header/App/AppNav';
 import Installation from '../Header/Installation/Istallation';
 import MainLayout from '../MainLayout/MainLayout';
+import AppDetails from '../AppDetails/AppDetails';
 
 
 
@@ -24,6 +25,10 @@ import MainLayout from '../MainLayout/MainLayout';
       {
         path: '/installation',
         Component: Installation
+      },
+      {
+        path: '/app/:id',
+        Component: AppDetails
       }
     ]
   },
