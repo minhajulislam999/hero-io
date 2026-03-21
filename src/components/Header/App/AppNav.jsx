@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router'
+import NotFound from '../../NotFount/NotFount'
 
 const AllApps = () => {
     const [apps, setApps] = useState([])
+    const [search, setSearch] = useState('')
 
     useEffect(() => {
         fetch('/data.json')
@@ -20,22 +22,34 @@ const AllApps = () => {
 
 
         <div>
+            
 
             <div className='text-center py-10'>
-                    <h1 className='text-2xl font-bold text-[#001931] m-5'>
-                        Our All Applications
-                    </h1>
-                    <p>
-                        Explore All Apps on the Market developed by us. We code for Millions
-                    </p>
+                <h1 className='text-2xl font-bold text-[#001931] m-5'>
+                    Our All Applications
+                </h1>
+                <p>
+                    Explore All Apps on the Market developed by us. We code for Millions
+                </p>
+            </div>
+
+            <div>
+                <div>
+                    <p>{apps.length}</p>
                 </div>
+                <div>
+                    <input type='text' placeholder='Search apps...' className='input input-bordered' onChange={(e) => setSearch(e.target.value)} />
+                </div>
+            </div>
             <div className='grid grid-cols-1 md:grid-cols-4 gap-4'>
 
-                
+
 
                 {
 
-                    apps.map(app => (
+    apps.filter(app => app.title.toLowerCase().includes(search.toLowerCase()))
+                    
+                    .map(app => (
                         <Link to={`/app/${app.id}`} >
 
                             <div key={app.id} className="card bg-base-100 shadow p-4 flex flex-col items-center gap-2">
@@ -61,7 +75,12 @@ const AllApps = () => {
                 }
 
             </div>
+
+             {apps.filter(app => app.title.toLowerCase().includes(search.toLowerCase())).length === 0 && (
+                 <NotFound />
+)}
         </div>
+       
     )
 }
 

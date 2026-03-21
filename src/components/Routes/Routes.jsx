@@ -5,6 +5,7 @@ import AppNav from '../Header/App/AppNav';
 import Installation from '../Header/Installation/Istallation';
 import MainLayout from '../MainLayout/MainLayout';
 import AppDetails from '../AppDetails/AppDetails';
+import NotFound from '../NotFount/NotFount';
 // import AllApps from '../AllApps/AllApps';
 
 
@@ -31,12 +32,17 @@ import AppDetails from '../AppDetails/AppDetails';
         path: '/app/:id',
         Component: AppDetails
       },
+      
       // {
       //   path: '/all-apps',
       //   Component: AppNav
       // }
     ]
   },
+  {
+        path: '*',
+        Component: NotFound
+      }
 ]);
 
   
