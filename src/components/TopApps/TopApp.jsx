@@ -66,7 +66,7 @@ const TopApp = () => {
       
         <div>
 
-            <button onClick={() => navigate('/all-apps')} className='btn btn-primary flex items-center mt-6'>Show All</button>
+            <button onClick={() => navigate('/app')} className='btn btn-primary flex items-center mt-6'>Show All</button>
         </div>
 
         </>
