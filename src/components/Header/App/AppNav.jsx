@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router'
 import NotFound from '../../NotFount/NotFount'
+import { FaSearch } from 'react-icons/fa'
 
 const AllApps = () => {
     const [apps, setApps] = useState([])
@@ -33,12 +34,13 @@ const AllApps = () => {
                 </p>
             </div>
 
-            <div>
+            <div className='flex justify-between items-center px-4 py-3'>
                 <div>
-                    <p>{apps.length}</p>
+                    <p className='text-xl font-bold'>({apps.length}) Apps Founds</p>
                 </div>
-                <div>
-                    <input type='text' placeholder='Search apps...' className='input input-bordered' onChange={(e) => setSearch(e.target.value)} />
+                <div className='relative'>
+                    <FaSearch className='absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 z-10' />
+                    <input type='text' placeholder='Search apps' className='input rounded-xl pl-9' onChange={(e) => setSearch(e.target.value)} />
                 </div>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-4 gap-4'>

@@ -33,10 +33,10 @@ import NotFound from '../NotFount/NotFount';
         Component: AppDetails
       },
       
-      // {
-      //   path: '/all-apps',
-      //   Component: AppNav
-      // }
+      {
+        path: '/all-apps',
+        Component: AppNav
+      }
     ]
   },
   {
