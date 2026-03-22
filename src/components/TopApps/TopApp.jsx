@@ -25,9 +25,9 @@ const TopApp = () => {
     const navigate = useNavigate()
     return (
 <>
-<div className='flex items-center py-5'>
+<div className='flex flex-col items-center py-9'>
     <div>
-                <h1>Trending Apps</h1>
+                <h1 className='text-[#001931] font-bold text-3xl py-3'>Trending Apps</h1>
 
     </div>
 
