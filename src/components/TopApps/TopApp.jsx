@@ -25,7 +25,20 @@ const TopApp = () => {
     const navigate = useNavigate()
     return (
 <>
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-4'>
+<div className='flex items-center py-5'>
+    <div>
+                <h1>Trending Apps</h1>
+
+    </div>
+
+<div>
+                    <p>Explore All Trending Apps on the Market developed by us</p>
+
+</div>
+            </div>
+        <div className='grid grid-cols-1 md:grid-cols-4 gap-4'>
+
+            
             {
                 apps.sort((a, b) => b.downloads - a.downloads)
                     .slice(0, 8)

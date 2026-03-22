@@ -35,7 +35,7 @@ import NotFound from '../NotFount/NotFount';
       
       {
         path: '/all-apps',
-        Component: AppNav
+        Component: AppNav,
       }
     ]
   },
