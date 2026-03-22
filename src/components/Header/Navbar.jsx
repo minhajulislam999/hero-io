@@ -56,15 +56,15 @@ const Navbar = () => {
       </div>
       <div className="navbar-center  hidden lg:flex">
         <ul className="menu menu-horizontal px-1 rounded-xl gap-5">
-          <NavLink className={({isActive}) => isActive? "tex-[#632EE3] " : "text-gray-500"}  end to = '/'>
+          <NavLink className={({isActive}) => isActive? "text-[#632EE3] font-bold " : "text-gray-500"}  end to = '/'>
 
               Home
             </NavLink>
-            <NavLink className={({isActive}) => isActive? "tex-[#632EE3] " : "text-gray-500"}   to='/app'>
+            <NavLink className={({isActive}) => isActive? "text-[#632EE3] font-bold " : "text-gray-500"}   to='/app'>
 
               App
             </NavLink>
-            <NavLink className={({isActive}) => isActive? "tex-[#632EE3] " : "text-gray-500"}   to = '/installation'>
+            <NavLink className={({isActive}) => isActive? "text-[#632EE3] font-bold " : "text-gray-500"}   to = '/installation'>
 
               Installation
             </NavLink>
