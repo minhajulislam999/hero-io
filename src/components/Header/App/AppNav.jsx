@@ -6,6 +6,7 @@ import { FaSearch } from 'react-icons/fa'
 const AllApps = () => {
     const [apps, setApps] = useState([])
     const [search, setSearch] = useState('')
+    const [loading, setLoading] = useState(false)
 
     useEffect(() => {
         fetch('/data.json')
@@ -40,9 +41,19 @@ const AllApps = () => {
                 </div>
                 <div className='relative'>
                     <FaSearch className='absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 z-10' />
-                    <input type='text' placeholder='Search apps' className='input rounded-xl pl-9' onChange={(e) => setSearch(e.target.value)} />
+                    <input type='text' placeholder='Search apps' className='input rounded-xl pl-9' onChange={(e) => { setLoading(true); setTimeout(()=>{
+                        setSearch(e.target.value); setLoading(false); }, 500)
+                        
+                        
+                     } } />
                 </div>
             </div>
+
+            {loading && <p className='text-center'> <div className='flex justify-center py-10'>
+                <span className="loading loading-spinner text-accent loading-xl"></span>
+                
+                </div>
+</p>}
             <div className='grid grid-cols-1 md:grid-cols-4 gap-4'>
 
 
