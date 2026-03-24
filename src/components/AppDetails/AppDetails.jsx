@@ -4,6 +4,7 @@ import { useParams } from 'react-router'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import AppNotFound from '../AppsNotFound/AppNotFound'
 
 const AppDetails = () => {
 
@@ -22,7 +23,7 @@ const AppDetails = () => {
       })
   }, [id])
 
-  if (!app) return <p>Loding.......</p>
+  if (!app) return <AppNotFound />
 
   const format = (num) => {
     if (num >= 1000000000) return (num / 1000000000).toFixed(1) + "B"
