@@ -34,15 +34,20 @@ const Banner = () => {
 
                     </div>
                     <div className='flex flex-wrap gap-4 justify-center  '>
-                        <button className="btn  bg-[#D2D2D2] rounded-xl text-xl font-bold">
+                        
+
+                        <a href='https://play.google.com/store' target='_blank' className="btn bg-[#D2D2D2] rounded-xl text-xl font-bold">
                             <img src='https://i.ibb.co.com/kbNygSK/Group-3.png' />
-                            Google Play</button>
+                            Google Play
+                        </a>
 
 
-                        <button className="btn bg-[#D2D2D2] rounded-xl text-xl font-bold">
+                        
+
+                        <a href='https://www.apple.com/app-store/' target='_blank' className="btn bg-[#D2D2D2] rounded-xl text-xl font-bold">
                             <img src='https://i.ibb.co.com/S4m56z82/fi-5977575.png' />
-
-                            App Store</button>
+                            App Store
+                        </a>
                     </div>
                     <div className='pt-10'>
                         <img src='/hero.png' />
@@ -50,7 +55,7 @@ const Banner = () => {
 
                     </div>
 
-                   
+
                 </div>
 
 
