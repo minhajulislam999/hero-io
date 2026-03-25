@@ -1,20 +1,55 @@
-<<<<<<< HEAD
-# React + Vite
+# HERO.IO 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A multi-page React application that showcases a collection of mobile apps with detailed information, search functionality, and interactive UI components.
 
-Currently, two official plugins are available:
+## 🌐 Live Site
+https://profound-brigadeiros-e7bce6.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Home Page** — Banner section with app store links and trending apps
+- **Trending Apps** — Top 8 apps sorted by downloads in a 4-column grid
+- **All Apps Page** — Browse all 20 apps with live search functionality
+- **App Details Page** — Detailed app info, review chart, and install button
+- **Search** — Live case-insensitive search with loading spinner
+- **Install Button** — Becomes disabled with success toast after clicking
+- **Review Chart** — Horizontal bar chart using Recharts library
+- **404 Page** — Custom error page for invalid routes
+- **Loading Bar** — NProgress loading bar on page navigation
+- **Responsive** — Works on all screen sizes
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
 
-## Expanding the ESLint configuration
+- React
+- React Router v6
+- Tailwind CSS
+- DaisyUI
+- Recharts
+- React Toastify
+- NProgress
+- React Icons
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# hero-io
->>>>>>> 85a3f654744d2b367873ed7fa85898a128198e1b
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/minhajulislam999/hero-io.git
+
+# Go to project directory
+cd hero-io
+
+# Install dependencies
+npm install
+
+# Run the project
+npm run dev
+```
+
+## 👨‍💻 Author
+
+**Minhajul Islam**
+- GitHub: [@minhajulislam999](https://github.com/minhajulislam999)
+
+---
+
+Made with ❤️ using React
